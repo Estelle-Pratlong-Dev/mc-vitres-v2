@@ -1,0 +1,377 @@
+/***************************************************************
+Variables
+***************************************************************/
+
+:root {
+    --color-accent:       #C9A24E;
+    --color-accent-light: #E3C878;
+    --color-bg:           #17171B;
+    --color-bg-alt:       #1E1E23;
+    --color-text:         #F2EFE9;
+    --color-text-muted:   #ABA79C;
+}
+
+/***************************************************************
+Styles généraux
+***************************************************************/
+
+body {
+    color: var(--color-text);
+    font-family: 'Ubuntu', sans-serif;
+    background: var(--color-bg);
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0 auto 10px auto;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin: 16px 0 8px 0;
+}
+
+p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+section {
+    padding: 90px 0;
+    scroll-margin-top: 70px;
+}
+
+section:nth-of-type(even) {
+    background: var(--color-bg-alt);
+}
+
+.btn-accent,
+.btn-accent-outline,
+.btn-call {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: 2px solid var(--color-accent);
+}
+
+.btn-accent:hover {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+    color: var(--color-bg);
+}
+
+.btn-accent-outline {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+}
+
+.btn-accent-outline:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+/***************************************************************
+Décoration titres de section
+***************************************************************/
+
+.header-page {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flourish {
+    display: block;
+    width: 140px;
+    height: 16px;
+    margin: 14px auto 0 auto;
+    stroke: var(--color-accent);
+    fill: var(--color-accent);
+    stroke-width: 1.5;
+}
+
+.flourish path {
+    fill: none;
+}
+
+/***************************************************************
+Navbar
+***************************************************************/
+
+#mainNav {
+    background: rgba(23, 23, 27, 0.95);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#mainNav.scrolled {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+#mainNav .navbar-brand {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+#mainNav .navbar-brand span {
+    color: var(--color-accent);
+}
+
+#mainNav .nav-link {
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+    color: var(--color-accent);
+}
+
+#mainNav .navbar-toggler {
+    border-color: var(--color-accent);
+}
+
+#mainNav .navbar-toggler-icon {
+    filter: invert(75%) sepia(35%) saturate(500%) hue-rotate(2deg);
+}
+
+#mainNav .btn-call {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-size: 15px;
+    padding: 8px 18px;
+}
+
+#mainNav .btn-call:hover {
+    background: var(--color-accent-light);
+    color: var(--color-bg);
+}
+
+/***************************************************************
+Accueil
+***************************************************************/
+
+header {
+    position: relative;
+    padding: 170px 0 120px 0;
+    text-align: center;
+    color: var(--color-text);
+    background: radial-gradient(ellipse at 50% -10%, rgba(201, 162, 78, 0.15), transparent 60%), var(--color-bg);
+    overflow: hidden;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(135deg, rgba(201, 162, 78, 0.05) 0 2px, transparent 2px 60px);
+    pointer-events: none;
+}
+
+header .container {
+    position: relative;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+}
+
+header .tagline {
+    color: var(--color-text);
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 10px 0;
+}
+
+header .flourish {
+    margin: 10px auto 30px auto;
+}
+
+/***************************************************************
+A propos
+***************************************************************/
+
+.eco-badge {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.eco-badge i {
+    font-size: 34px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}
+
+.eco-badge p {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/***************************************************************
+Services
+***************************************************************/
+
+.service {
+    width: 100%;
+    background: var(--color-bg-alt);
+    border: 1px solid rgba(201, 162, 78, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.service > i {
+    font-size: 32px;
+    color: var(--color-accent);
+}
+
+.service h3 {
+    color: var(--color-text);
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.service ul li {
+    color: var(--color-text-muted);
+    padding: 4px 0;
+    border-top: 1px solid rgba(201, 162, 78, 0.15);
+}
+
+.service ul li:first-child {
+    border-top: none;
+}
+
+/***************************************************************
+Zone d'intervention
+***************************************************************/
+
+.zone-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.zone-list span {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+.zone-list i {
+    margin-right: 6px;
+}
+
+/***************************************************************
+Contact
+***************************************************************/
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    color: var(--color-accent);
+}
+
+.contact-links i {
+    font-size: 30px;
+    color: var(--color-accent);
+}
+
+/***************************************************************
+Footer
+***************************************************************/
+
+footer {
+    background: #101012;
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-size: 13px;
+}
+
+/***************************************************************
+MEDIA QUERIES
+***************************************************************/
+
+@media (max-width: 991px) {
+
+    #navMain {
+        background: var(--color-bg);
+        padding: 15px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #mainNav .btn-call {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    header {
+        padding: 140px 0 80px 0;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+}

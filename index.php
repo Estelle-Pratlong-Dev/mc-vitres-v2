@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC-VITRES | Lavage de vitres et nettoyage professionnel à Graveson</title>
+    <meta name="description" content="MC-VITRES, entreprise de nettoyage à Graveson : lavage de vitres, entretien de locaux, nettoyage de hottes professionnelles, remise en état après travaux. Intervention autour d'Avignon, Châteaurenard, Saint-Rémy-de-Provence, Arles, Tarascon et Beaucaire." />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Ubuntu + Cinzel Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+
+    <!-- Mon fichier CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <!-------------------------------------- NAVIGATION -------------------------------------->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">MC-<span>VITRES</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Ouvrir le menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#zone">Zone d'intervention</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="tel:0686333312" class="btn btn-call ms-lg-3" aria-label="Appeler MC-VITRES">
+                    <i class="fas fa-phone" aria-hidden="true"></i> 06 86 33 33 12
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------- ACCUEIL -------------------------------------->
+    <header id="accueil">
+        <div class="container">
+            <h1>MC-VITRES</h1>
+            <svg class="flourish" viewBox="0 0 200 20" aria-hidden="true">
+                <path d="M0 10 H70" />
+                <path d="M130 10 H200" />
+                <path d="M70 10 C 78 2, 84 2, 90 10" />
+                <path d="M110 10 C 116 2, 122 2, 130 10" />
+                <rect x="93" y="3" width="14" height="14" transform="rotate(45 100 10)" />
+            </svg>
+            <p class="tagline">Lavage de vitres &amp; nettoyage professionnel à Graveson</p>
+            <a href="#contact" class="btn btn-accent">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-------------------------------------- A PROPOS -------------------------------------->
+        <section id="apropos">
+            <div class="container">
+                <div class="header-page">
+                    <h2>À propos de MC-VITRES</h2>
+                    <svg class="flourish" viewBox="0 0 200 20" aria-hidden="true">
+                        <path d="M0 10 H70" />
+                        <path d="M130 10 H200" />
+                        <path d="M70 10 C 78 2, 84 2, 90 10" />
+                        <path d="M110 10 C 116 2, 122 2, 130 10" />
+                        <rect x="93" y="3" width="14" height="14" transform="rotate(45 100 10)" />
+                    </svg>
+                </div>
+
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-8">
+                        <p>L'entreprise de nettoyage MC-VITRES propose de multiples services. Spécialiste du lavage de vitres et du nettoyage industriel, elle assure aussi l'entretien de locaux, la remise en état après travaux de tous vos espaces et, pour finir, le nettoyage de hottes professionnelles (restaurants, collectivités, etc.).</p>
+                        <p>MC-VITRES est situé à Graveson, à moins de 15 minutes d'Avignon, Châteaurenard, Saint-Rémy-de-Provence, Arles, Tarascon et Beaucaire.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="eco-badge">
+                            <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                            <p>MC-VITRES n'utilise que des produits éco-responsables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------- SERVICES -------------------------------------->
+        <section id="services">
+            <div class="container">
+                <div class="header-page">
+                    <h2>Nos services</h2>
+                    <svg class="flourish" viewBox="0 0 200 20" aria-hidden="true">
+                        <path d="M0 10 H70" />
+                        <path d="M130 10 H200" />
+                        <path d="M70 10 C 78 2, 84 2, 90 10" />
+                        <path d="M110 10 C 116 2, 122 2, 130 10" />
+                        <rect x="93" y="3" width="14" height="14" transform="rotate(45 100 10)" />
+                    </svg>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <article class="service">
+                            <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                            <h3>Lavage de vitres</h3>
+                            <p>Spécialiste du lavage de vitres pour particuliers et professionnels.</p>
+                            <ul>
+                                <li>Restaurants</li>
+                                <li>Commerces</li>
+                                <li>Hôtels</li>
+                                <li>Gîtes</li>
+                                <li>Particuliers (mas, villas, domaines)</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <article class="service">
+                            <i class="fa-solid fa-broom" aria-hidden="true"></i>
+                            <h3>Entretien des locaux</h3>
+                            <p>Nettoyage de lieux variés, pour diverses occasions :</p>
+                            <ul>
+                                <li>Magasins</li>
+                                <li>Cabinets médicaux</li>
+                                <li>Laboratoires</li>
+                                <li>Avant emménagement</li>
+                                <li>Fin de chantier</li>
+                                <li>Maisons et appartements</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <article class="service">
+                            <i class="fa-solid fa-fan" aria-hidden="true"></i>
+                            <h3>Nettoyage de hottes</h3>
+                            <p>Nettoyage et dégraissage de hottes professionnelles.</p>
+                            <ul>
+                                <li>Restaurants</li>
+                                <li>Cantines scolaires</li>
+                                <li>Maisons de retraite</li>
+                                <li>Toute restauration collective</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <article class="service">
+                            <i class="fa-solid fa-building" aria-hidden="true"></i>
+                            <h3>Nettoyage d'immeuble</h3>
+                            <p>Entretien des parties communes.</p>
+                            <ul>
+                                <li>Copropriétés</li>
+                                <li>Locations de vacances</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex">
+                        <article class="service">
+                            <i class="fa-solid fa-hammer" aria-hidden="true"></i>
+                            <h3>Remise en état après travaux</h3>
+                            <p>MC-VITRES s'occupe pour vous de la remise en état de tous vos espaces à la fin de vos travaux (sols, vitres, poussières, etc.).</p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------- ZONE D'INTERVENTION -------------------------------------->
+        <section id="zone">
+            <div class="container">
+                <div class="header-page">
+                    <h2>Zone d'intervention</h2>
+                    <svg class="flourish" viewBox="0 0 200 20" aria-hidden="true">
+                        <path d="M0 10 H70" />
+                        <path d="M130 10 H200" />
+                        <path d="M70 10 C 78 2, 84 2, 90 10" />
+                        <path d="M110 10 C 116 2, 122 2, 130 10" />
+                        <rect x="93" y="3" width="14" height="14" transform="rotate(45 100 10)" />
+                    </svg>
+                </div>
+
+                <p class="text-center">MC-VITRES est basé à Graveson et intervient à moins de 15 minutes autour de :</p>
+
+                <div class="zone-list">
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Avignon</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Châteaurenard</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Saint-Rémy-de-Provence</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Arles</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Tarascon</span>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Beaucaire</span>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="https://share.google/95fRY3PhTuK5Vk49S" target="_blank" rel="noopener noreferrer" class="btn btn-accent-outline">
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Voir sur Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------- CONTACT -------------------------------------->
+        <section id="contact">
+            <div class="container">
+                <div class="header-page">
+                    <h2>Contact</h2>
+                    <svg class="flourish" viewBox="0 0 200 20" aria-hidden="true">
+                        <path d="M0 10 H70" />
+                        <path d="M130 10 H200" />
+                        <path d="M70 10 C 78 2, 84 2, 90 10" />
+                        <path d="M110 10 C 116 2, 122 2, 130 10" />
+                        <rect x="93" y="3" width="14" height="14" transform="rotate(45 100 10)" />
+                    </svg>
+                </div>
+
+                <p class="text-center">Un projet, une demande de devis ? Contactez MC-VITRES.</p>
+
+                <div class="contact-links">
+                    <a href="tel:0686333312" aria-label="Téléphone">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>06 86 33 33 12</span>
+                    </a>
+                    <a href="mailto:mikaelcapion@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>mikaelcapion@gmail.com</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100086028064666" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-------------------------------------- FOOTER -------------------------------------->
+    <footer>
+        <div class="container">
+            <p>&copy; <?php echo date('Y'); ?> MC-VITRES — Graveson</p>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Mon script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
