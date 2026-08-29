@@ -3,6 +3,9 @@ $(document).ready(function () {
     const $navLinks = $('#navMain .nav-link');
     const $sections = $('main section, header');
 
+    // Année du copyright dans le footer
+    $('#year').text(new Date().getFullYear());
+
     // Défilement doux au clic sur un lien du menu
     $navLinks.on('click', function (e) {
         e.preventDefault();

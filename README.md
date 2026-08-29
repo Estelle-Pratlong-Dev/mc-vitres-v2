@@ -22,7 +22,6 @@ Il permet de consulter :
 
 ## Technologies
 
-- PHP
 - HTML5
 - CSS3
 - JavaScript (jQuery)
