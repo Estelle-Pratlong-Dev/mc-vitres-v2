@@ -1,0 +1,45 @@
+/***************************************************************
+Page Mentions légales
+Réutilise les variables de couleur de styles.css.
+***************************************************************/
+
+.legal {
+    padding: 80px 0 100px 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.legal .container {
+    max-width: 100%;
+}
+
+.legal__retour {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.legal__retour:hover {
+    text-decoration: underline;
+}
+
+.legal h1 {
+    margin-bottom: 30px;
+    color: var(--color-accent);
+}
+
+.legal h2 {
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+    color: var(--color-text);
+}
+
+.legal p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.legal a {
+    color: var(--color-accent);
+}
