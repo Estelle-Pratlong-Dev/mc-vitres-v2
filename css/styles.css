@@ -353,6 +353,14 @@ footer p {
 footer .credit {
     margin-top: 6px;
     font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+footer .credit__sep {
+    opacity: 0.5;
 }
 
 footer .credit a {
@@ -371,9 +379,14 @@ MEDIA QUERIES
 @media (max-width: 991px) {
 
     #navMain {
+        display: none;
         background: var(--color-bg);
         padding: 15px 0;
         border-radius: 0 0 10px 10px;
+    }
+
+    #navMain.show {
+        display: block;
     }
 
     #mainNav .btn-call {

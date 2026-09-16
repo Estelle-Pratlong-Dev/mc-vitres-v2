@@ -25,9 +25,13 @@ plus facile à héberger, sans sacrifier une identité visuelle soignée.
 
 - **Aucune dépendance à un back-office** : le contenu étant stable, un site statique évite la
   complexité (et les risques de sécurité) d'un CMS pour un besoin qui n'en justifie pas un.
-- **En-têtes de sécurité et CSP** définis via `.htaccess`, malgré l'hébergement statique.
+- **En-têtes de sécurité et CSP stricte** définis via `.htaccess`, malgré l'hébergement statique —
+  a nécessité de remplacer le menu mobile de Bootstrap (qui anime sa hauteur en style inline) par
+  une bascule CSS pure, pour ne pas affaiblir la politique de sécurité.
 - **Identité visuelle reprise de la charte existante** de l'entreprise (carte de visite, supports
   imprimés) plutôt qu'un choix arbitraire, pour rester cohérent sur tous les supports.
+- **Référencement** : données structurées (Schema.org LocalBusiness), Open Graph, sitemap, page
+  404 personnalisée.
 
 ## Stack
 

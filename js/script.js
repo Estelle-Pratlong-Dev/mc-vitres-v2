@@ -6,6 +6,14 @@ $(document).ready(function () {
     // Année du copyright dans le footer
     $('#year').text(new Date().getFullYear());
 
+    // Menu mobile : bascule en CSS pur (max-width: 991px), sans le composant
+    // Collapse de Bootstrap — celui-ci anime la hauteur via un style inline,
+    // bloqué par la Content-Security-Policy (style-src sans unsafe-inline).
+    $('#navToggle').on('click', function () {
+        const ouvert = $('#navMain').toggleClass('show').hasClass('show');
+        $(this).attr('aria-expanded', ouvert);
+    });
+
     // Défilement doux au clic sur un lien du menu
     $navLinks.on('click', function (e) {
         e.preventDefault();
@@ -13,9 +21,8 @@ $(document).ready(function () {
 
         $('html, body').animate({ scrollTop: $target.offset().top - 70 }, 600);
 
-        if ($('#navMain').hasClass('show')) {
-            $('#navMain').collapse('hide');
-        }
+        $('#navMain').removeClass('show');
+        $('#navToggle').attr('aria-expanded', false);
     });
 
     // Mise en surbrillance du lien actif selon la section visible

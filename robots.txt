@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estelle-pratlong-dev.github.io/mc-vitres-v2/sitemap.xml
