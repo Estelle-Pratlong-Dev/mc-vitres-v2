@@ -36,7 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         navLinks.forEach(function (lien) {
-            lien.classList.toggle('active', lien.getAttribute('href') === '#' + currentId);
+            const estActif = lien.getAttribute('href') === '#' + currentId;
+            lien.classList.toggle('active', estActif);
+            // "location" (et non "page") : ce sont des ancres dans une page
+            // unique, pas des pages distinctes.
+            if (estActif) {
+                lien.setAttribute('aria-current', 'location');
+            } else {
+                lien.removeAttribute('aria-current');
+            }
         });
     }
 
