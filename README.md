@@ -32,10 +32,13 @@ plus facile à héberger, sans sacrifier une identité visuelle soignée.
   imprimés) plutôt qu'un choix arbitraire, pour rester cohérent sur tous les supports.
 - **Référencement** : données structurées (Schema.org LocalBusiness), Open Graph, sitemap, page
   404 personnalisée.
+- **jQuery et le JS de Bootstrap retirés** : le site ne s'en servait plus (menu mobile déjà passé
+  en CSS pur pour la CSP), les garder n'aurait fait qu'ajouter du poids et une dépendance externe
+  inutile. Le défilement fluide passe par `scroll-behavior`/`scroll-margin-top` en CSS natif.
 
 ## Stack
 
-HTML5 · CSS3 · JavaScript (jQuery) · Bootstrap 5 · Font Awesome · Git
+HTML5 · CSS3 · JavaScript vanilla · Bootstrap 5 (CSS uniquement) · Font Awesome · Git
 
 ## À propos
 

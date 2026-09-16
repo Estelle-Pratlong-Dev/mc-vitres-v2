@@ -15,6 +15,10 @@ Variables
 Styles généraux
 ***************************************************************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--color-text);
     font-family: 'Ubuntu', sans-serif;

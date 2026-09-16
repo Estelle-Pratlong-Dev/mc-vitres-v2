@@ -1,56 +1,51 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-    const $navLinks = $('#navMain .nav-link');
-    const $sections = $('main section, header');
-    const reduireAnimations = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const navLinks = document.querySelectorAll('#navMain .nav-link');
+    const sections = document.querySelectorAll('main section, header');
+    const navToggle = document.getElementById('navToggle');
+    const navMain = document.getElementById('navMain');
+    const mainNav = document.getElementById('mainNav');
 
     // Année du copyright dans le footer
-    $('#year').text(new Date().getFullYear());
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Menu mobile : bascule en CSS pur (max-width: 991px), sans le composant
-    // Collapse de Bootstrap — celui-ci anime la hauteur via un style inline,
-    // bloqué par la Content-Security-Policy (style-src sans unsafe-inline).
-    $('#navToggle').on('click', function () {
-        const ouvert = $('#navMain').toggleClass('show').hasClass('show');
-        $(this).attr('aria-expanded', ouvert);
+    // Menu mobile : bascule en CSS pur (max-width: 991px)
+    navToggle.addEventListener('click', function () {
+        const ouvert = navMain.classList.toggle('show');
+        navToggle.setAttribute('aria-expanded', ouvert);
     });
 
-    // Défilement doux au clic sur un lien du menu
-    $navLinks.on('click', function (e) {
-        e.preventDefault();
-        const $target = $($(this).attr('href'));
-
-        $('html, body').animate({ scrollTop: $target.offset().top - 70 }, reduireAnimations ? 0 : 600);
-
-        $('#navMain').removeClass('show');
-        $('#navToggle').attr('aria-expanded', false);
+    // Ferme le menu mobile au clic sur un lien
+    // (le défilement fluide est géré en CSS : scroll-behavior + scroll-margin-top)
+    navLinks.forEach(function (lien) {
+        lien.addEventListener('click', function () {
+            navMain.classList.remove('show');
+            navToggle.setAttribute('aria-expanded', false);
+        });
     });
 
     // Mise en surbrillance du lien actif selon la section visible
     function activateNav() {
-        const scrollPos = $(window).scrollTop() + 100;
+        const scrollPos = window.scrollY + 100;
         let currentId = 'accueil';
 
-        $sections.each(function () {
-            if ($(this).offset().top <= scrollPos) {
-                currentId = $(this).attr('id');
+        sections.forEach(function (section) {
+            if (section.offsetTop <= scrollPos) {
+                currentId = section.id;
             }
         });
 
-        $navLinks.removeClass('active');
-        $navLinks.filter('[href="#' + currentId + '"]').addClass('active');
+        navLinks.forEach(function (lien) {
+            lien.classList.toggle('active', lien.getAttribute('href') === '#' + currentId);
+        });
     }
 
     // Fond plein sur la nav dès que la page défile
     function toggleNavBackground() {
-        if ($(window).scrollTop() > 20) {
-            $('#mainNav').addClass('scrolled');
-        } else {
-            $('#mainNav').removeClass('scrolled');
-        }
+        mainNav.classList.toggle('scrolled', window.scrollY > 20);
     }
 
-    $(window).on('scroll', function () {
+    window.addEventListener('scroll', function () {
         activateNav();
         toggleNavBackground();
     });
@@ -58,4 +53,4 @@ $(document).ready(function () {
     activateNav();
     toggleNavBackground();
 
-})
+});
