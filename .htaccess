@@ -9,8 +9,8 @@ Options -Indexes
     # Empêche le navigateur de deviner le type MIME
     Header always set X-Content-Type-Options "nosniff"
 
-    # Active la protection XSS du navigateur
-    Header always set X-XSS-Protection "1; mode=block"
+    # (X-XSS-Protection retiré : obsolète, plus aucun navigateur récent ne
+    # l'utilise — la CSP ci-dessous est la vraie protection contre les XSS)
 
     # Ne transmet pas le referrer vers d'autres domaines
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
@@ -19,7 +19,8 @@ Options -Indexes
     Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data:;"
 </IfModule>
 
-# Forcer HTTPS (production uniquement - commenter en local)
+# Forcer HTTPS : inutile sur GitHub Pages (deja fait par la plateforme),
+# mais a decommenter si le site est un jour heberge ailleurs (ex. IONOS)
 # <IfModule mod_rewrite.c>
 #     RewriteEngine On
 #     RewriteCond %{HTTPS} off
