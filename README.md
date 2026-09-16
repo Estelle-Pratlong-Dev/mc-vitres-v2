@@ -1,61 +1,39 @@
-# MC-VITRES — Refonte d'un site vitrine
+# MC-VITRES — Site vitrine
 
-Refonte du site vitrine de **MC-VITRES**, entreprise de nettoyage basée à Graveson (13), proposant ses services aux particuliers et aux professionnels.
+Refonte du site vitrine de **MC-VITRES**, entreprise de nettoyage (vitres, locaux, hottes
+professionnelles) basée à Graveson (30), à destination des particuliers et des professionnels.
 
 🌐 **[Voir le site en ligne](https://estelle-pratlong-dev.github.io/mc-vitres-v2/)**
 
-## Le projet
+---
 
-Une première version du site avait été réalisée sous WordPress plusieurs années auparavant.
+## Le projet en bref
 
-Cette nouvelle version a été entièrement repensée sous la forme d'un site statique afin de moderniser l'interface, simplifier la navigation et disposer d'une solution légère et facile à maintenir.
-
-Le site présente les différentes activités de MC-VITRES :
-
-- Lavage de vitres
-- Entretien de locaux
-- Nettoyage de hottes professionnelles
-- Nettoyage d'immeubles
-- Remise en état après travaux
-
-Il présente également la zone d'intervention de l'entreprise et permet d'accéder rapidement aux différents moyens de contact.
+Une première version du site existait sous WordPress, lourde à maintenir pour une activité aux
+besoins simples : présenter les prestations, la zone d'intervention et les moyens de contact.
+L'objectif de la refonte était de repartir sur une base **statique et légère**, plus rapide et
+plus facile à héberger, sans sacrifier une identité visuelle soignée.
 
 ## Fonctionnalités
 
-- Navigation sur une page unique
-- Défilement fluide entre les sections
-- Mise en évidence automatique de la section active dans le menu
-- Interface responsive adaptée aux différentes tailles d'écran
-- Présentation détaillée des prestations
-- Liens directs pour téléphoner ou envoyer un email
-- Accès aux réseaux sociaux et à la localisation de l'entreprise
+- **Page unique** présentant l'entreprise, ses prestations, sa zone d'intervention et ses
+  coordonnées.
+- **Navigation avec défilement fluide** et mise en évidence de la section active au scroll.
+- **Interface responsive**, pensée mobile d'abord (le premier point de contact des clients).
 
-## Technologies
+## Choix techniques notables
 
-- HTML5
-- CSS3
-- jQuery
-- Bootstrap 5
-- Font Awesome
-- Git / GitHub Pages
+- **Aucune dépendance à un back-office** : le contenu étant stable, un site statique évite la
+  complexité (et les risques de sécurité) d'un CMS pour un besoin qui n'en justifie pas un.
+- **En-têtes de sécurité et CSP** définis via `.htaccess`, malgré l'hébergement statique.
+- **Identité visuelle reprise de la charte existante** de l'entreprise (carte de visite, supports
+  imprimés) plutôt qu'un choix arbitraire, pour rester cohérent sur tous les supports.
 
-## Objectifs de la refonte
+## Stack
 
-Cette nouvelle version avait principalement pour objectifs de :
-
-- Moderniser l'apparence générale du site
-- Améliorer la lisibilité des prestations proposées
-- Simplifier l'accès aux informations essentielles
-- Améliorer l'affichage sur mobile
-- Remplacer l'ancien site WordPress par une solution plus légère
-- Faciliter la maintenance et l'hébergement
-
-## Statut
-
-✅ Site fonctionnel et publié via GitHub Pages.
+HTML5 · CSS3 · JavaScript (jQuery) · Bootstrap 5 · Font Awesome · Git
 
 ## À propos
 
-Projet réalisé pour **MC-VITRES** à partir d'un besoin réel d'entreprise.
-
-Cette refonte reprend le contenu et l'objectif du site WordPress initial tout en proposant une nouvelle conception technique et visuelle.
+Projet réalisé pour **MC-VITRES** à partir d'un besoin réel d'entreprise : reprendre le contenu
+et l'objectif du site existant tout en proposant une nouvelle conception technique et visuelle.
