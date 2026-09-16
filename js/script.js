@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     const $navLinks = $('#navMain .nav-link');
     const $sections = $('main section, header');
+    const reduireAnimations = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // Année du copyright dans le footer
     $('#year').text(new Date().getFullYear());
@@ -19,7 +20,7 @@ $(document).ready(function () {
         e.preventDefault();
         const $target = $($(this).attr('href'));
 
-        $('html, body').animate({ scrollTop: $target.offset().top - 70 }, 600);
+        $('html, body').animate({ scrollTop: $target.offset().top - 70 }, reduireAnimations ? 0 : 600);
 
         $('#navMain').removeClass('show');
         $('#navToggle').attr('aria-expanded', false);

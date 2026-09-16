@@ -43,6 +43,18 @@ p {
     line-height: 1.6;
 }
 
+/***************************************************************
+Focus clavier
+***************************************************************/
+
+a:focus-visible,
+button:focus-visible,
+.btn-accent:focus-visible,
+.btn-accent-outline:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
 section {
     padding: 90px 0;
     scroll-margin-top: 70px;
@@ -400,5 +412,27 @@ MEDIA QUERIES
 
     header h1 {
         font-size: 34px;
+    }
+}
+
+/***************************************************************
+Réduction des animations (préférence utilisateur)
+***************************************************************/
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    .service:hover {
+        transform: none;
     }
 }
